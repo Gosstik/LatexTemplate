@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% To reuse that document:
+% 1) Change Source/TitlePage.tex
+% 2) Change Headings/Geometry.tex (headers and footers)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper, 12pt, oneside]{extarticle}  % "extarticle" instead "article" to use 14pt font
+
+\input{Headings/Packages}
+%%%%%%%%%% Hack, чтобы не удалять комментарии. %%%%%%%%%%
+\newif\ifdraft{}
+% \drafttrue
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Headings/Shortcuts}
+\input{Headings/Geometry}
+\input{Headings/TheoremStyles}
+\input{Headings/Misc}
+% \input{Headings/Custom}
+
+%%%%%%%%%%%%%%% Specific for that project %%%%%%%%%%%%%%%
+% \newcommand{\sepsection}[1]{{\large\bfseries Specific new command}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%% Title page.
+\input{Source/TitlePage}
+\clearpage
+
+%%%% Table of content.
+\setcounter{page}{2}
+\tocloftpagestyle{default_page_style}
+\hypertarget{table-of-contents}{}
+\tableofcontents
+\pagestyle{default_page_style}
+\clearpage
+
+%%%% Materials/
+\include{Source/SourceExample.tex}
+% \include{Source/Source2.tex}
+% ...
+
+\end{document}

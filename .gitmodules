@@ -1,0 +1,3 @@
+[submodule "Headings"]
+	path = Headings
+	url = git@github.com:Gosstik/LatexHeadings.git
