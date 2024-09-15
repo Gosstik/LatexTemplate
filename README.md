@@ -17,6 +17,10 @@ git fetch template
 git rebase template/master
 git submodule init && git submodule update
 
+git config push.recurseSubmodules check
+git add Headings
+git commit -am "feat: git config push.recurseSubmodules check"
+
 git push -u origin master
 ```
 
@@ -27,7 +31,7 @@ git push -u origin master
 git pull --recurse-submodules
 
 # Option 2 (after git pull)
-git submodule update --init --recursive --merge
+git submodule update --init --recursive --rebase
 ```
 
 ### Update submodules
