@@ -6,7 +6,7 @@
 mkdir <Project>
 cd <Project>
 
-# Create github repo
+# Create github repo for <Project>
 git init
 git commit --allow-empty -m "empty initial commit"
 git remote add origin <repo>
@@ -16,10 +16,6 @@ git remote set-url --push template DISABLE
 git fetch template
 git rebase template/master
 git submodule init && git submodule update
-
-git config push.recurseSubmodules check
-git add Headings
-git commit -am "feat: git config push.recurseSubmodules check"
 
 git push -u origin master
 ```
