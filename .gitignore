@@ -1,4 +1,5 @@
-out/
+pdf/*
+!pdf/main.pdf
 tmp/
 indent.log
 *.aux
