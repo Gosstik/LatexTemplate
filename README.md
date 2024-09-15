@@ -1,4 +1,4 @@
-# Project name
+# Latex project
 
 ### Development
 
