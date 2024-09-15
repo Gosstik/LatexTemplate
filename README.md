@@ -8,16 +8,16 @@ cd <Project>
 
 # Create github repo
 git init
-# git commit --allow-empty -m "empty initial commit"
+git commit --allow-empty -m "empty initial commit"
 git remote add origin <repo>
 
 git remote add template git@github.com:Gosstik/LatexTemplate.git
 git remote set-url --push template DISABLE
 git fetch template
-git checkout template/master
-# git rebase template/master
-git submodule init
-git submodule update
+git rebase template/master
+git submodule init && git submodule update
+
+git push -u origin master
 ```
 
 ### Pull changes
