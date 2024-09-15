@@ -2,4 +2,4 @@
 
 ### Development
 
-Follow [that instruction](Headings/README.md#template-project)
+Follow that instruction: [relative link](Headings/README.md#template-project), [github link](https://github.com/Gosstik/LatexHeadings/tree/master).
